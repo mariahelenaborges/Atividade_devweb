@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
 
-app.get('/', (req, res) => {
-  res.send('Bem-vindo ao sistema');
+app.get("/erro", (req, res) => {
+    res.status(404).send("Página não encontrada");
 });
 
 app.listen(

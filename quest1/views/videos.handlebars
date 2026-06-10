@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Vídeos</h1>
+
+<a href="/videos/cadastrar">
+  Cadastrar Vídeo
+</a>
+
+<hr>
+
+{{#each videos}}
+
+<div>
+
+  <img
+    src="{{thumbnail}}"
+    width="250"
+  >
+
+  <h2>{{titulo}}</h2>
+
+  <p>Criador: {{criador}}</p>
+
+  <p>Visualizações: {{visualizacoes}}</p>
+
+  <p>Curtidas: {{curtidas}}</p>
+
+  <p>{{hashtag}}</p>
+
+  <a href="{{urlVideo}}">
+    Assistir vídeo
+  </a>
+
+</div>
+
+<hr>
+
+{{/each}}
+</body>
+</html>
